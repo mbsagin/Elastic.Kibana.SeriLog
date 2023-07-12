@@ -15,11 +15,37 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        _logger.LogTrace(
+            $"LogTrace from Index at {DateTime.UtcNow}");
+        _logger.LogDebug(
+            $"LogDebug from Index at {DateTime.UtcNow}");
+        _logger.LogInformation(
+            $"LogInformation from Index at {DateTime.UtcNow}");
+        _logger.LogWarning(
+            $"LogWarning from Index at {DateTime.UtcNow}");
+        _logger.LogError(
+            $"LogError from Index at {DateTime.UtcNow}");
+        _logger.LogCritical(
+            $"LogCritical from Index at {DateTime.UtcNow}");
+
         return View();
     }
 
     public IActionResult Privacy()
     {
+        _logger.LogTrace(
+    $"LogTrace from Privacy at {DateTime.UtcNow}");
+        _logger.LogDebug(
+            $"LogDebug from Privacy at {DateTime.UtcNow}");
+        _logger.LogInformation(
+            $"LogInformation from Privacy at {DateTime.UtcNow}");
+        _logger.LogWarning(
+            $"LogWarning from Privacy at {DateTime.UtcNow}");
+        _logger.LogError(
+            $"LogError from Privacy at {DateTime.UtcNow}");
+        _logger.LogCritical(
+            $"LogCritical from Privacy at {DateTime.UtcNow}");
+
         return View();
     }
 
